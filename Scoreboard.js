@@ -16,12 +16,16 @@ var player = GetPlayer();
 var teamnameValue = player.GetVar("TeamName");
 var scoreValue = player.GetVar("Score"); 
 var mottoValue = player.GetVar("TeamMotto");
+var teammembernameValue = player.GetVar("TeamMemberName");
 
 // Send an ajax request with the parsed data and relevant url 
 request = $.ajax({
             url: "https://script.google.com/macros/s/AKfycbycrJGZLmJWYnxhWpVlGhRU70_612h-eCz-_ef7ADlFU9ECK4xK/exec",
             type: "post",
-            data: "TeamName="+encodeURIComponent(teamnameValue)+"&Score="+encodeURIComponent(scoreValue)+"&TeamMotto="+encodeURIComponent(mottoValue)
+            data: "TeamName="+encodeURIComponent(teamnameValue)
+            +"&Score="+encodeURIComponent(scoreValue)
+            +"&TeamMotto="+encodeURIComponent(mottoValue)
+            +"&TeamMemberName="+encodeURIComponent(teammembernameValue)
         });
 
 
