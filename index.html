@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <?!= include('css'); ?>
+    <base target="_top">
+  </head>
+  <body>
+        <img src="https://resources.health.ubc.ca/health-informatics/scoreboard.png" alt="scoreboard" style="padding-top: 80px;height: 60%; width: 60%;filter: invert(98%) sepia(1%) saturate(672%) hue-rotate(270deg) brightness(121%) contrast(100%);">
+   
+    <div >
+      <? var data = getData(); var breakpoint = 0; //breakpoint is needed because getDataRange() in google scripts is broken with conditional formatting in the open sheet?>
+      <table id="data">
+        <tr>
+          <th>Time</th>
+          <th>Team Name</th>
+          <th>Score</th>
+          <th>Team Motto</th>
+        </tr>
+        <? for (var i = 1; i < data.length; i++) { if (breakpoint) {break;} //if breakpoint is true, there is no value, then break the loop?>
+        <tr>
+        <? for (var j = 0; j < 4; j++) { if (data[i][j] == "" && j == "0") {breakpoint =1; break;}//number of columns?>
+        <td><?= data[i][j] ?></td>
+        <? } ?>
+        </tr>
+        <? } ?>
+      </table>
+    </div>
+  </body>
+</html>
+
+
