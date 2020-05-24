@@ -1,3 +1,5 @@
+
+**UBC Health Informatics Game**
 # EHRstoryboard
 
 1. Javascript
@@ -17,5 +19,3 @@
 - Otherwise, the html can be edited as you wish
 
 
-
-**UBC Health Informatics Game**
