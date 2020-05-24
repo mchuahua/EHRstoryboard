@@ -20,4 +20,4 @@ Consists of google script for HTML display frontend, and a google sheet for data
 - Make sure number of columns matches the number of columns in data_processed
 - Otherwise, the html can be edited as you wish
 
-There should be lots of comments that are self-explanatory, otherwise contact me for any help :)
+There should be lots of comments that are self-explanatory, especially the useful links + info sheet, otherwise contact me for any help :)
