@@ -2,7 +2,7 @@
 **UBC Health Informatics Game**
 # EHRstoryboard
 
-Consists of google script for HTML display frontend, and a google sheet for data acquisition + google script POST backend.
+Consists of google script for HTML display frontend, and a google sheet database + google script POST data acquisition backend.
 
 1. Javascript
 - .js code should be embedded inside the articulate storyline file. Make sure the variables match whatever variables are needed to be sent, and no undefined variables are sent as it will mess up the POST retrieval logic
