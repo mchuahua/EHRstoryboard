@@ -15,3 +15,7 @@
 - Accesses data_processed sheet and outputs a nice html
 - Make sure number of columns matches the number of columns in data_processed
 - Otherwise, the html can be edited as you wish
+
+
+
+**UBC Health Informatics Game**
